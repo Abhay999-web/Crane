@@ -1,0 +1,20 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes infinite-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+ 
+  
+  .animate-scroll-left {
+    display: flex;
+    width: max-content;
+    animation: infinite-scroll-left 25s linear infinite;
+  }
